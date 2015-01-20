@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:9000/ -->
+<html class="no-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- build:basejs scripts/base-core.js-->
+        <!--bower:basejs-->
+        <script src="./localhost_files/require.js"></script>
+        <script src="./localhost_files/glue-core_cf8326f7.js"></script>
+        <!--endbower-->
+        <!--endbuild-->
+
+        <!-- build:css styles/Focus_login_depmodules.css-->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:css styles/Focus_login_depmodules_pc.css device:pc-->
+        <!-- bower:css device:pc-->
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        
+
+        
+
+        <!-- build:css styles/Focus_login_main.css lib-->
+        <link rel="stylesheet" href="http://localhost:9000/styles/Focus_login.css">
+        <!--模块自身的css文件-->
+        <!--endbuild-->
+
+        
+
+        
+
+        <!-- build:css styles/Focus_login_main_pc.css lib device:pc-->
+        <!--endbuild-->
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="artTemplate#3.0.3" src="./localhost_files/template.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="public_login" src="./localhost_files/public_login.min.js"></script></head>
+    <body>
+        <button id="testIsLogin">测试是否登录</button>
+        <button class="testLogin">测试登录</button>
+        <button class="testLogout">测试退出登录</button>
+        <span class="testLoginCallbak">未登录</span>
+        <div class="loginWrap">
+            
+        </div>
+        <!-- build:requirejs scripts/Focus_login_depmodules.js-->
+        <!--bower:requirejs-->
+        <script>
+           requirejs.config({
+             paths:{
+              "artTemplate#3.0.3" : "components/artTemplate__3.0.3/lib/template",
+              "public_login": "http://y0.ifengimg.com/p/login/20131227/public_login.min"
+             },
+             waitSeconds: 20,shim: {}});
+        </script>
+        <!--endbower-->
+        <!--endbuild-->
+
+        
+
+        
+
+        <!-- build:requirejs scripts/Focus_login_depmodules_pc.js device:pc-->
+        <!--bower:requirejs device:pc-->
+        <!--endbower-->
+        <!--endbuild-->
+        
+
+        <!-- build:js scripts/Focus_login_main.js lib-->
+        
+        <script src="./localhost_files/Focus_login_template.js"></script>
+        <script src="./localhost_files/Focus_login.js"></script>
+        <!--组件本身的js文件-->
+        <!--endbuild-->
+
+        
+
+        
+
+        <!-- build:js scripts/Focus_login_main_pc.js lib device:pc-->
+        <!--endbuild-->
+
+
+        <!-- 以标签方式注册一个组件 -->
+        <!--
+        <div g-cid="widgetId" g-cname="Focus_login" g-depId="" g-priority="1" g-option"{'model.propertyName': '@@outModel.propertyName'}"></div>
+        -->
+        <script>
+            var settings = {
+
+            };
+
+            var $ = function(id) {
+                return document.getElementById(id);
+            };
+
+            // 直接创建一个组件
+            require(['Focus_login'], function(Focus_login) {
+              var focus_login = new Focus_login(glue).create(document.body, settings);
+
+              $('testIsLogin').onclick = function() {
+                alert(window['IS_LOGIN']());
+              }
+            });
+
+            
+
+            // 扫描组件
+            // glue.scan();
+            // 运行组件
+            // glue.run();
+        </script>
+
+    
+<script type="text/javascript">document.write('<script src="' + (location.protocol || 'http:') + '//' + (location.hostname || 'localhost') + ':35729/livereload.js?snipver=1" type="text/javascript"><\/script>')</script><script src="./localhost_files/livereload.js" type="text/javascript"></script>
+
+
+<div id="window-resizer-tooltip" style="display: block;"><a href="http://localhost:9000/#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1920</span> x <span class="tooltipHeight" id="winHeight">1050</span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth">1920</span> x <span class="tooltipHeight" id="vpHeight">512</span></div></body></html>
